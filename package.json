@@ -1,0 +1,19 @@
+{
+  "name": "trading-bot",
+  "version": "1.0.0",
+  "description": "A trading bot ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "lightweight-charts": "^3.3.0",
+    "pug": "3.0.2"
+  },
+  "keywords": [
+    "Test-1.0"
+  ],
+  "author": "Hemanth Bysani",
+  "license": "MIT"
+}
