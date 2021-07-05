@@ -10,7 +10,7 @@ loginButton.addEventListener("click", (e) => {
     if (username === "admin" && password === "admin") {
         alert("You have successfully logged in.");
         alert("Redirecting to Dashboard");
-        window.location = "work_in_progress.jpg"
+        window.location = "./Dashboard.html"
     }
     else if (username == null || username == "") {
         alert("Please enter the username.");
