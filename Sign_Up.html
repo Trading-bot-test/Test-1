@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script>
+  function myFunction() {
+    alert("You have successfully Registered!, Please confirm your E-Mail Address");
+  }
+</script>
+<link rel="stylesheet" href="Sign_Up.css">
+    <head>
+        <title>Sign-Up</title>
+    </head>
+<body>
+      <div id="signup-holder">
+          <div id="signup-left">
+          </div>
+          <div class="signup-right">
+              <h1>Sign-Up</h1>
+              <form>
+                <p><label class="input-field">Name</label><br>
+                <input type="text" placeholder="First Name" required>
+                <input type="text" placeholder="Last Name" required></p>
+
+                <p><label class="input-field">Phone Number</label>
+                <input type="text" placeholder="Phone Number" maxlength="10" required></p>
+
+                <p><label class="input-field">Birthday</label>                      
+                <input type="date" placeholder="DD/MM/YYYY" required></p>
+                
+                <p><label>E-mail</label>
+                <input type="email" placeholder="Email"></p>
+                
+                <p><label>Password</label>
+                <input type="password" placeholder="Password"></p>
+                
+                <p><label class="input-field"> Aadhaar Card:</label>
+                <input type="file" ><p>
+                
+                <p><label class="input-field"> Address Proof : </label>
+                <input type="file" ></p>
+
+                <p><i>Note Address Proof: Passport / Voter’s Identity Card / Driving License</i></p>
+                <div class="button">
+                  <button onclick="location.href = 'login.html'; myFunction()" class="submit"><strong><p style="color: black">Submit</p></strong></button>
+                </div>  
+              </form>
+          </div>
+      </div>
+</body>
+</html>

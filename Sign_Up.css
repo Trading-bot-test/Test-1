@@ -1,0 +1,60 @@
+body{
+    background-image: url(graph2.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    font-family:'Trebuchet MS' 
+  }   
+  #signup-holder
+  {
+    width:55%;
+    height:500px;
+    margin:35px auto;
+    border-radius: 7px;
+    background-image: linear-gradient(to bottom left, rgb(127, 184, 250), rgb(192, 192, 192));
+    animation: fadeinani2 ease-in 1s;
+  }
+  #signup-left
+  {
+    width: 35%;
+    height: 500px;
+    margin-right: 20px;
+    background-image: url(bullblack.jpg);
+    background-repeat: no-repeat;
+    background-size: 110% 500px;
+    float:left;
+  }
+  @keyframes fadeinani2{
+    0%{
+      opacity: 0;
+    }
+    80%{
+      opacity: 0.9;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  #signup-right
+  {
+    width: 65%;
+    height: 500px;
+    float:right;
+  }
+  .heading{
+      font-size: 20px;
+      margin-left: auto;
+  }
+  .input-field{
+    font-size: 15px;
+    font-weight:500;
+  }
+  .submit{
+    background-color: rgb(56, 165, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+  }
+  .button{
+    text-align: center;
+    padding: 10px;  
+  }
