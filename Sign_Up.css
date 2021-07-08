@@ -2,7 +2,7 @@ body{
     background-image: url(graph2.jpg);
     background-size: cover;
     padding-top: 100px;
-    font-family:'Trebuchet MS' 
+    font-family:sans-serif;
   }   
   #signup-holder
   {
@@ -10,7 +10,7 @@ body{
     height:500px;
     margin:35px auto;
     border-radius: 7px;
-    background-image: linear-gradient(to bottom left, rgb(127, 184, 250), rgb(192, 192, 192));
+    background-color: rgb(44, 44, 44) ;
     animation: fadeinani2 ease-in 1s;
   }
   #signup-left
@@ -23,38 +23,60 @@ body{
     background-size: 110% 500px;
     float:left;
   }
-  @keyframes fadeinani2{
-    0%{
-      opacity: 0;
-    }
-    80%{
-      opacity: 0.9;
-    }
-    100%{
-      opacity: 1;
-    }
-  }
-  #signup-right
+
+.input-padding{
+  padding: 3px;
+}
+
+label {
+  color: #d3d3d3;
+}
+i {
+  color: #d3d3d3;
+}
+
+h1{
+  padding: 25px;
+  color:#2E8B57; 
+  
+}
+input{
+  border:none;
+  border-radius: 3px;
+  background-color: grey;
+}
+::placeholder{
+  color: BLACK;
+}
+
+#signup-right
   {
     width: 65%;
     height: 500px;
     float:right;
+    
   }
-  .heading{
+.heading{
       font-size: 20px;
       margin-left: auto;
   }
-  .input-field{
+.input-field{
     font-size: 15px;
     font-weight:500;
+    
   }
   .submit{
-    background-color: rgb(56, 165, 255);
+    background-color:#2E8B57;
     border: none;
-    padding: 10px 20px;
+    padding:0px 28px;
     border-radius: 7px;
+    transition: opacity 0.5s;
+  }
+  .submit:hover{
+    opacity: 0.7;
   }
   .button{
     text-align: center;
     padding: 10px;  
+    
   }

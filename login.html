@@ -12,23 +12,33 @@
 <body>
   <div id="login-holder">
   <div id="login-left">
-    <p style="display:grid; justify-items:center; align-items:center; color: black; font-size: 25px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Login</p>
+    <p class="login-head">Login</p>
     <form id="login-form">
-        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username or Email ID">
+        <input type="text" name="username" id="username-field" placeholder="Username or Email ID">
         <br>
-        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <input type="password" name="password" id="password-field" placeholder="Password">
+        <br>
+        <a id="fgt-pass" href="forgot_pass.html">Forgot Password?</a>
+        
         <br>
         <input type="submit" value="Login" id="login-form-submit">
-        <br>
+       <br>
       </form>
-    <a id="fgt-pass" href="forgot_pass.html">Forgot password?</a>
-    <br> 
-    <a id="new-usr" href="Sign_Up.html">New here?</a>
-    <hr>
-    <p style="display:grid; justify-items:center; align-items:center; color: rgb(0, 0, 0); margin: 0px 0px;"><i>Log in via SocialMedia</i></p>
-    <a href="https://myaccount.google.com/" class="devicon-google-original-wordmark" style="text-decoration: none; font-size: 60px; display: grid; justify-items: center;color: black;"></a>
-    <a href="#" class="devicon-facebook-plain" style="text-decoration:none; font-size:40px; display:grid; justify-items:center;color: black;"></a>
+    
+    
+    
+    <p style="text-align: center;color: #d3d3d3;">------ <i>Log in via</i> ------</p>
+    <p style="display:grid; justify-items:center; align-items:center; color: #d3d3d3; margin: 0px 0px;"></p> 
+   
+    <div id="social">
+    <a href="https://myaccount.google.com/" class="devicon-google-plain colored" style="text-decoration: none; font-size: 30px; color: black;"></a> &emsp; 
+    <a href="https://www.facebook.com/" class="devicon-facebook-plain" style="text-decoration:none; font-size:30px; color: black;"></a> &emsp;
+    <a href="https://www.twitter.com/" class="devicon-twitter-original colored" style="text-decoration:none; font-size:30px; color: black;"></a> 
+    </div>
+    <br><br><br>
+    <a style="color: #d3d3d3; text-decoration: none;" id="new-usr" href="Sign_Up.html">New? Sign up - it's FREE!</a>
   </div>
+
   <div id="login-right">
   </div>
   </div>
