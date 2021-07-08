@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
 html{
   overflow-y: scroll;
+  font-family: 'Calibri';
 }
-
 body {
   background: #212121;
   padding: 50px 0;
@@ -23,7 +23,7 @@ body {
   display: inline;
   list-style: outside none none;
   margin: .5em 1em;
-  padding: 0;
+  padding-left: 0;
 }
 
 .nav a {
@@ -113,7 +113,7 @@ body {
   margin: 0;
 }
 .border-right{
-  height: 200%;
+  height: 250%;
   border-right: #2e8b57 solid;
 }
 
@@ -138,9 +138,10 @@ body {
   border-radius: 5px; 
   text-align: center;
 }
-.news_articles{
-  display: inline-block;
-  font-size:22px;
-  color:antiquewhite;
+.article_link{
+  font-size: 20px;
+  text-decoration: none;
+  color: antiquewhite;
+  vertical-align: top;
 }
 
