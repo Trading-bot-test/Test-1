@@ -5,6 +5,7 @@
     <script src="https://kit.fontawesome.com/dc5784d9ea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="Dashboard.css">
 </head>
+
 <body>
     <div class="spl left">
         <img src="Logo.jpg" alt="Logo" height="120" width="130" style="padding-left: 30px;">
@@ -12,29 +13,15 @@
         <div class="updates">
             <p style="font-size:15px; color: rgba(255,255,255,.5); padding-bottom: 15px;">MARKET UPDATES</p>
             <p class="sub-head">SENSEX</p>
-            <p class="data"><span id="data_sensex"></span><i class="fas fa-arrow-up"></i></p>&emsp;
-            <script type="text/javascript">
-                var numberText = document.createTextNode("");
-                document.getElementById("data_sensex").appendChild(numberText);
-                function randint() {
-                numberText.nodeValue = Math.floor(Math.random()*20)+23456.34;
-                }
-                randint();
-                setInterval(randint,1000*2);
-            </script>
-            <p class="data" style="color: #42e442;">+<span id="data_sensex_arr"></span></p>
-            <script type="text/javascript">
-                var numberText1 = document.createTextNode("");
-                document.getElementById("data_sensex_arr").appendChild(numberText1);
-                function randint() {
-                numberText1.nodeValue = Math.floor(Math.random()*20)+170.27;
-                }
-                randint();
-                setInterval(randint,1000*2);
-            </script>
+            <p class="data">53246.01 <i class="fas fa-arrow-up"></i></p>&emsp;
+            <p class="data" style="color: #42e442;">+191.25</p>
             <p class="sub-head">NIFTY</p>
             <p class="data">15871.85 <i class="fas fa-arrow-down"></i></p>&emsp;
             <p class="data" style="color:red;">-7.80</p>
+            <div align="center">
+            <p class="sub-head">MOOD OF THE MARKET</p><br>
+            <img src="bull_left.jpg" alt="bull" height="105" width="105">
+            </div>
         </div>
     </div>
     </div>   
@@ -48,7 +35,7 @@
     </ul>
     <div class="spr right">
       <br><br>
-      <p class="greeting">Hello Rahul Gandhi! Vin Diesel se acha family hain tera!!</p><br>
+      <p class="greeting">Hello Rahul Gandhi! Hope You Have A Great Trade!!</p><br>
       
       <table border="0" cellspacing="5" cellpadding="5">
           <td>
@@ -85,7 +72,7 @@
           </table>
           </td>
           <td style="padding-left: 15px;">
-            <p class="greeting">&numsp;Top 5 losers</p>
+            <p class="greeting">&numsp;Top 5 Losers</p>
             <table border="0" cellspacing="7" cellpadding="8 ">
                 <th class="table_head">Company</th>
                 <th class="table_head">Current Price</th>
@@ -118,6 +105,19 @@
           </table>
           </td>
       </table>
+      <table border="0" cellspacing="5" cellpadding="5">
+          <td>
+              <img src="Sensex.jpg" alt="Sensex_Graph" height="280" width="425">
+          </td>
+          <td style="padding-left: 30px;">
+            <img src="Nifty.jpg" alt="Nifty_Graph" height="280" width="425">
+          </td>
+      </table>
+      <div>
+          <p class="greeting">News Articles!! What is Cooking Up in the Market ...</p>
+          <a class="fx-widget" data-widget="newsfeed" data-lang="en" data-post-date-color="#999" data-post-description-color="#333333" data-post-title-color="#333333" data-widget-bg-color="#FFF" data-show-image data-width="1000" data-height="300" data-show-date data-title-font-size="18" data-intro-font-size="16" data-show-upper-intro data-category="news" data-section="all" data-base-url="https://www.fxempire.com" data-url="//www.fxempire.com" href="https://www.fxempire.com" rel="nofollow" style="font-family:Helvetica;font-size:16px;line-height:1.5;text-decoration:none;"> <span style="color:#999999;display:inline-block;margin-top:10px;font-size:12px;"></span> <img style="width:87px; height:14px;" src="https://www.fxempire.com/logo-full.svg" alt="FX Empire logo" /> </a> <script async charset="utf-8" src="https://widgets.fxempire.com/widget.js" ></script>
+      </div>
+      </div>
     </div>
 </body>
 </html>
