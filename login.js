@@ -25,3 +25,4 @@ loginButton.addEventListener("click", (e) => {
         loginErrorMsg.style.opacity = 1;
     }
 })
+{/* <script defer src="login.js"></script> */}
