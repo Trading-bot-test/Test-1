@@ -5,14 +5,6 @@
     <script src="https://kit.fontawesome.com/dc5784d9ea.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="Dashboard.css">
 </head>
-<script>
-    var number = 10;
-    setInterval(function(){ 
-    number = Math.floor((Math.random()*100)+53246);
-    document.getElementById("data_sensex") = number
-    }, 1000);
-
-</script>
 <body>
     <div class="spl left">
         <img src="Logo.jpg" alt="Logo" height="120" width="130" style="padding-left: 30px;">
@@ -20,8 +12,26 @@
         <div class="updates">
             <p style="font-size:15px; color: rgba(255,255,255,.5); padding-bottom: 15px;">MARKET UPDATES</p>
             <p class="sub-head">SENSEX</p>
-            <p class="data">53246.01 <i class="fas fa-arrow-up"></i></p>&emsp;
-            <p class="data" style="color: #42e442;">+191.25</p>
+            <p class="data"><span id="data_sensex"></span><i class="fas fa-arrow-up"></i></p>&emsp;
+            <script type="text/javascript">
+                var numberText = document.createTextNode("");
+                document.getElementById("data_sensex").appendChild(numberText);
+                function randint() {
+                numberText.nodeValue = Math.floor(Math.random()*20)+23456.34;
+                }
+                randint();
+                setInterval(randint,1000*2);
+            </script>
+            <p class="data" style="color: #42e442;">+<span id="data_sensex_arr"></span></p>
+            <script type="text/javascript">
+                var numberText1 = document.createTextNode("");
+                document.getElementById("data_sensex_arr").appendChild(numberText1);
+                function randint() {
+                numberText1.nodeValue = Math.floor(Math.random()*20)+170.27;
+                }
+                randint();
+                setInterval(randint,1000*2);
+            </script>
             <p class="sub-head">NIFTY</p>
             <p class="data">15871.85 <i class="fas fa-arrow-down"></i></p>&emsp;
             <p class="data" style="color:red;">-7.80</p>
