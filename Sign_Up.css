@@ -11,7 +11,7 @@ body{
     margin:35px auto;
     border-radius: 7px;
     background-color: rgb(44, 44, 44) ;
-    animation: fadeinani2 ease-in 1s;
+    
   }
   #signup-left
   {
@@ -43,7 +43,7 @@ h1{
 input{
   border:none;
   border-radius: 3px;
-  background-color: grey;
+  background-color: #696969;
 }
 ::placeholder{
   color: BLACK;
