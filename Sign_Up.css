@@ -6,22 +6,31 @@ body{
   }   
   #signup-holder
   {
-    width:55%;
+    width:65%;
     height:500px;
     margin:35px auto;
     border-radius: 7px;
-    background-color: rgb(44, 44, 44) ;
-    
+    background-color: rgb(44, 44, 44) ;  
   }
   #signup-left
   {
-    width: 35%;
+    width: 40%;
     height: 500px;
     margin-right: 20px;
     background-image: url(bullblack.jpg);
     background-repeat: no-repeat;
-    background-size: 110% 500px;
+    background-size: cover;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     float:left;
+    background-position-x: center;
+  }
+  #signup-right
+  {
+    width: 60%;
+    height: 500px;
+    float:right;
+    
   }
 
 .input-padding{
@@ -49,13 +58,7 @@ input{
   color: BLACK;
 }
 
-#signup-right
-  {
-    width: 65%;
-    height: 500px;
-    float:right;
-    
-  }
+
 .heading{
       font-size: 20px;
       margin-left: auto;
