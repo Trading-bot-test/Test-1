@@ -40,7 +40,7 @@ body {
   height: 14px;
   width: 14px;
   position: absolute;
-  transition: all .35s ease;
+  transition: all .55s ease;
   opacity: 0;
 }
 
@@ -48,7 +48,7 @@ body {
   content: '';
   right: 0;
   top: 0;
-  border-top: 3px solid 		#32CD32  ;
+  border-top: 3px solid 	#32CD32  ;
   border-right: 3px solid #ADFF2F  ;
   transform: translate(-100%, 50%);
 }
