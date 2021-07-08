@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+html{
+  overflow-y: scroll;
+}
 
 body {
   background: #212121;
   padding: 50px 0;
 }
-
 .nav {
   font-family: 'Titillium Web';
   text-transform: uppercase;
@@ -46,8 +48,8 @@ body {
   content: '';
   right: 0;
   top: 0;
-  border-top: 3px solid #1B4F72 ;
-  border-right: 3px solid #1B4F72 ;
+  border-top: 3px solid 		#32CD32  ;
+  border-right: 3px solid #ADFF2F  ;
   transform: translate(-100%, 50%);
 }
 
@@ -55,8 +57,8 @@ body {
   content: '';
   left: 0;
   bottom: 0;
-  border-bottom: 3px solid #1B4F72 ;
-  border-left: 3px solid #1B4F72 ;
+  border-bottom: 3px solid 		#32CD32   ;
+  border-left: 3px solid #ADFF2F  ;
   transform: translate(100%,-50%)
 }
 
@@ -67,15 +69,73 @@ body {
 }
 
 .nav a:hover {
-  color: #3498DB ;
+  color: 	#ADFF2F ;
+}
+.greeting{
+  color: rgba(255,255,255,.5);
+  font-size: 25px;
+  padding-top: 9px;
+}
+.spl {
+  height: 100%;
+  width: 15%;
+  position: absolute;
+}
+.spr{
+  height: 100%;
+  width: 81%;
+  position: absolute;
 }
 
-p {
-    font-family: 'Titillium Web';
-    color: azure;
-    font-size: x-large;
-    width: 65%;
-    border: 3px solid #3498DB;
-    padding:1in;
-    margin: 100px auto;
-    }
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+.updates{
+  padding-left: 30px;
+}
+.fa-arrow-up{
+  color: rgb(67, 201, 14);
+}
+.fa-arrow-down{
+  color: red;
+}
+.data{
+  font-size: 15px;
+  color: rgba(255,255,255,.5);
+  display: inline-block;
+}
+.sub-head{
+  font-size: 15px;
+  color: rgba(255,255,255,.5);
+  margin: 0;
+}
+.border-right{
+  height: 100%;
+  border-right: #2e8b57 solid;
+}
+
+.table_data{
+  color:rgba(255,255,255,.5);
+  font-size:20px;
+}
+.table_head{
+  color:rgba(255,255,255,.5);
+  font-size:20px;
+  text-align: left;
+}
+.change_stock_loss{
+  background: red; 
+  color: white; 
+  border-radius: 5px; 
+  text-align: center;
+}
+.change_stock_profit{
+  background: #42e442; 
+  color: white; 
+  border-radius: 5px; 
+  text-align: center;
+}
+
