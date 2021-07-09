@@ -5,12 +5,18 @@ body{
   background-position-y: center;
   font-family: sans-serif;
 }
+img{
+  padding-left: 90px;
+  padding-top: 20px;
+
+}
 #reset_pass_holder{
-  width: 25%;
-  height: 220px;
-  margin: 200px auto;
+  width: 35%;
+  height: 420px;
+  margin: 100px auto;
   background-color: #21282c;
   border-radius: 7px;
+
 }
 input{
   border: none;
