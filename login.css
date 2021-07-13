@@ -1,11 +1,20 @@
-body{
-  background-image: url(graph2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: center;
+body {
+	background: linear-gradient(-45deg, #D8B5FF, #1EAE98);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
 }
 
-
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 #login-holder
 {
   width: 45%;
@@ -14,7 +23,6 @@ body{
   background-color: black ;
   border-radius: 7px;
   animation: fadeinani2 ease-in 1s;
-
 }
 #login-left
 {
@@ -82,16 +90,21 @@ input{
     width: 200px;
 }
 #login-form-submit{
+    background-image: linear-gradient(to right, #00ff95 0%, #00ff37  51%, #91ff00  100%);
     display: inline-block;
     overflow: hidden;
     background-color: 	#2E8B57;
     border: none;
     border-radius: 4px;
-    transition: opacity 0.5s;
     padding:6px 25px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
 }
 #login-form-submit:hover{
-  opacity: 0.7;
+  background-position: right center;
+  color: blue;
+  text-decoration: none;
 }
 #fgt-pass{
   display: grid;

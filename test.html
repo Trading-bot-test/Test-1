@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body{
+  margin:0;
+  padding: 0;
+}
+.demo{
+  width: 100%;
+  height: 100vh;
+  background: url('https://i.postimg.cc/J07vSC9q/hero-background.jpg') no-repeat center;
+  background-size: cover;
+}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="js/jquery.ripples.js"></script>
+<script>
+    $('.demo').ripples({
+
+// Image Url
+imageUrl: null,
+
+// The width and height of the WebGL texture to render to. 
+// The larger this value, the smoother the rendering and the slower the ripples will propagate.
+resolution: 256,
+
+// The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
+dropRadius: 20,
+
+// Basically the amount of refraction caused by a ripple. 
+// 0 means there is no refraction.
+perturbance: 0.04,
+
+// Whether mouse clicks and mouse movement triggers the effect.
+interactive: true,
+
+// The crossOrigin attribute to use for the affected image. 
+crossOrigin: ''
+
+});
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="demo"></div>
+</body>
+</html>
