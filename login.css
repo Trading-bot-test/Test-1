@@ -51,13 +51,35 @@ body {
   justify-items: center;
   margin-top: 10px;
 }
-input{
+/* input{
   border: none;
   background-color: #696969;
   border-radius: 4px;
   width: 200px; 
-}
+} */
 
+#username-field, #password-field{
+  border: none;
+  background-color: #696969;
+  border-radius: 4px;
+  width: 200px;
+   
+}
+@keyframes field{
+  0%{
+    width: 200px;
+    height: 17px;
+  }
+  100%{
+    width:210px;
+    height: 25px;
+  }
+}
+#username-field:hover, #password-field:hover{
+  animation: field 1s ease;
+  width:210px;
+  height: 25px;
+}
 ::placeholder{
   color: BLACK;
 }
