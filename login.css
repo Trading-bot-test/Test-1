@@ -15,11 +15,6 @@ body {
 		background-position: 0% 50%;
 	}
 }
-body{
-  background-image: url(graph2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 #login-holder
 {
