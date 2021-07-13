@@ -15,20 +15,25 @@ body {
 		background-position: 0% 50%;
 	}
 }
+body{
+  background-image: url(graph2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #login-holder
 {
-  width: 45%;
+  width: 55%;
   height:420px;
-  margin: 150px auto;
-  background-color: black ;
+  margin: 110px auto;
   border-radius: 7px;
   animation: fadeinani2 ease-in 1s;
 }
+
 #login-left
 {
   width: 60%;
   height: 420px;
- 
   background-color: #21282c;
   float:left;
   border-top-left-radius: 7px;
@@ -38,7 +43,6 @@ body {
 {
   width: 40%;
   height: 420px;
-  background-color: rgb(44, 44, 44) ;
   float:right;
   border-top-right-radius: 7px;
   border-bottom-right-radius: 7px;
@@ -48,17 +52,15 @@ body {
   background-position-x: center;
 }
 #login-form{
-    align-self: flex-start;
-    display: grid;
-    
-    justify-items: center;
-    align-items: center;
-    margin-top: 10px;
+  display: grid;
+  justify-items: center;
+  margin-top: 10px;
 }
 input{
   border: none;
   background-color: #696969;
-  
+  border-radius: 4px;
+  width: 200px; 
 }
 
 ::placeholder{
@@ -66,29 +68,18 @@ input{
 }
 
 #social{
-  padding-left: 132px;
-
+  padding-left: 155px;
 }
+
 .login-head{
   display:grid;
   justify-items:center; 
-  align-items:center; 
   color:#2E8B57; 
   font-size: 25px;
   font-family:sans-serif; 
   font-weight: bold;
 }
 
-
-#username-field{
-    border-radius: 4px;
-    width: 200px;
-}
-#password-field{
-    border-radius: 4px;
-    display: inline-block;
-    width: 200px;
-}
 #login-form-submit{
     background-image: linear-gradient(to right, #00ff95 0%, #00ff37  51%, #91ff00  100%);
     display: inline-block;
@@ -100,12 +91,15 @@ input{
     transition: 0.5s;
     background-size: 200% auto;
     color: black;
+    width:100px;
 }
+
 #login-form-submit:hover{
   background-position: right center;
   color: blue;
   text-decoration: none;
 }
+
 #fgt-pass{
   display: grid;
   justify-items: center;
@@ -116,21 +110,10 @@ input{
   font-family: 'Trebuchet MS';
 }
 
-
 #new-usr{
   display: grid;
   align-self: flex-start;
   justify-items: center;
-  align-items: center;
   margin-bottom: 15px;
   font-family: 'Trebuchet MS';
-}
-hr{
-  width: 50%;
-  height: 2px;
-  border-radius: 2px;
-  background-color: black;
-}
-a , a:visited, a:hover, a:active{
-  color: black;
 }

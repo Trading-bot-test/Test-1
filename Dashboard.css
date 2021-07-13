@@ -3,11 +3,12 @@ html{
   overflow-y: scroll;
   font-family: 'Calibri';
 }
-body {
+body{
   background: #212121;
   padding: 50px 0;
 }
-.nav {
+
+.nav{
   font-family: 'Titillium Web';
   text-transform: uppercase;
   text-align: center;
@@ -34,8 +35,8 @@ body {
   font-size: 20px;
 }
 
-.nav a::before,
-.nav a::after {
+.nav a:before,
+.nav a:after {
   content: '';
   height: 14px;
   width: 14px;
@@ -44,7 +45,7 @@ body {
   opacity: 0;
 }
 
-.nav a::before {
+.nav a:before {
   content: '';
   right: 0;
   top: 0;
@@ -113,7 +114,7 @@ body {
   margin: 0;
 }
 .border-right{
-  height: 195%;
+  height: 220%;
   border-right: #2e8b57 solid;
 }
 
