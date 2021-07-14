@@ -1,8 +1,8 @@
-body {
+/* body {
 	background: linear-gradient(-45deg, #D8B5FF, #1EAE98);
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
-}
+} */
 
 @keyframes gradient {
 	0% {
@@ -15,14 +15,24 @@ body {
 		background-position: 0% 50%;
 	}
 }
+#particles-js {
+  position: relative;
+  width: 200vh;
+  height: 95vh;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+}
 
 #login-holder
 {
   width: 55%;
-  height:420px;
-  margin: 110px auto;
+  height: 420px;
+  margin: 170px 320px;
   border-radius: 7px;
-  animation: fadeinani2 ease-in 1s;
+  z-index: 100;
+  position: absolute;
 }
 
 #login-left
