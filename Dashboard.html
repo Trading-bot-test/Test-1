@@ -6,17 +6,54 @@
     <link rel="stylesheet" type="text/css" href="Dashboard.css">
 </head>
 <body>
+    <script src="https://www.macroaxis.com/widgets/url.jsp?t=42"></script>
     <div class="spl left">
         <img src="Logo.jpg" alt="Logo" height="120" width="130" style="padding-left: 30px;">
         <div class="border-right">
         <div class="updates">
             <p style="font-size:15px; color: rgba(255,255,255,.5); padding-bottom: 15px; font-weight:bold;">MARKET UPDATES</p>
             <p class="sub-head">SENSEX</p>
-            <p class="data" style="color: #42e442;">52561.88<i class="fas fa-arrow-up"></i></p>&emsp;
-            <p class="data" style="color: #42e442;">+305.54</p>
+            <p class="data" style="color: #42e442;"><span id="data_sensex"></span><i class="fas fa-arrow-up"></i></p>&emsp;
+            <script type="text/javascript">
+                var numberText1 = document.createTextNode("");
+                document.getElementById("data_sensex").appendChild(numberText1);
+                function randint() {
+                numberText1.nodeValue = Math.floor(Math.random()*20)+23456.34;
+                }
+                randint();
+                setInterval(randint,1000*2);
+            </script>
+            <p class="data" style="color: #42e442;">+<span id="data_sensex_mini"></span></p>
+            <script type="text/javascript">
+                var numberText2 = document.createTextNode("");
+                document.getElementById("data_sensex_mini").appendChild(numberText2);
+                function randint() {
+                numberText2.nodeValue = Math.floor(Math.random()*20)+305.54;
+                }
+                randint();
+                setInterval(randint,1000*2);
+            </script>
             <p class="sub-head">NIFTY</p>
-            <p class="data" style="color:red;">15713.80 <i class="fas fa-arrow-down"></i></p>&emsp;
-            <p class="data" style="color:red;">-165.85</p>
+            <p class="data" style="color: red;"><span id="data_nifty"></span><i class="fas fa-arrow-down"></i></p>&emsp;
+            <script type="text/javascript">
+                var numberText3 = document.createTextNode("");
+                document.getElementById("data_nifty").appendChild(numberText3);
+                function randint() {
+                numberText3.nodeValue = Math.floor(Math.random()*20)+15713.80;
+                }
+                randint();
+                setInterval(randint,1000*2);
+            </script>
+            <p class="data" style="color:red;">-<span id="data_nifty_mini"></span></p>
+            <script type="text/javascript">
+                var numberText4 = document.createTextNode("");
+                document.getElementById("data_nifty_mini").appendChild(numberText4);
+                function randint() {
+                numberText4.nodeValue = Math.floor(Math.random()*20)+165.85;
+                }
+                randint();
+                setInterval(randint,1000*2);
+            </script>
             <div style="padding-left: 5px; padding-top: 15px;">
             <p class="sub-head">MARKET'S MOOD</p><br>
             <img src="bull_left.jpg" alt="bull" height="125" width="125">
