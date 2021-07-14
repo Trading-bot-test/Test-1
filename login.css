@@ -1,15 +1,38 @@
-body{
-  background-image: url(graph2.jpg);
+/* body {
+	background: linear-gradient(-45deg, #D8B5FF, #1EAE98);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+} */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#particles-js {
+  position: relative;
+  width: 200vh;
+  height: 95vh;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -100;
 }
 
 #login-holder
 {
   width: 55%;
-  height:420px;
-  margin: 110px auto;
+  height: 420px;
+  margin: 170px 320px;
   border-radius: 7px;
+  z-index: 100;
+  position: absolute;
 }
 
 #login-left
@@ -38,13 +61,35 @@ body{
   justify-items: center;
   margin-top: 10px;
 }
-input{
+/* input{
   border: none;
   background-color: #696969;
   border-radius: 4px;
   width: 200px; 
-}
+} */
 
+#username-field, #password-field{
+  border: none;
+  background-color: #696969;
+  border-radius: 4px;
+  width: 200px;
+   
+}
+@keyframes field{
+  0%{
+    width: 200px;
+    height: 17px;
+  }
+  100%{
+    width:210px;
+    height: 25px;
+  }
+}
+#username-field:hover, #password-field:hover{
+  animation: field 1s ease;
+  width:210px;
+  height: 25px;
+}
 ::placeholder{
   color: BLACK;
 }
@@ -63,18 +108,23 @@ input{
 }
 
 #login-form-submit{
+    background-image: linear-gradient(to right, #00ff95 0%, #00ff37  51%, #91ff00  100%);
     display: inline-block;
     overflow: hidden;
     background-color: 	#2E8B57;
     border: none;
     border-radius: 4px;
-    transition: opacity 0.5s;
     padding:6px 25px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
     width:100px;
 }
 
 #login-form-submit:hover{
-  opacity: 0.7;
+  background-position: right center;
+  color: blue;
+  text-decoration: none;
 }
 
 #fgt-pass{
