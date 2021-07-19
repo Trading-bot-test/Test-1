@@ -9,7 +9,19 @@
         <header>
             <div id="header-left">
             <p>Nifty</p>
-            <p class="data" style="color: #42e442;"><span id="data_sensex"></span><i class="fas fa-arrow-up"></i></p>&emsp;
+            <p class="data" style="color: red;"><span id="data_nifty"></span></p>&emsp;
+            <script type="text/javascript">
+                var numberText3 = document.createTextNode("");
+                document.getElementById("data_nifty").appendChild(numberText3);
+                function randint() {
+                numberText3.nodeValue = Math.floor(Math.random()*20)+15713.80;
+                }
+                randint();
+                setInterval(randint,1000*2);
+            </script>
+            
+            <p>Sensex</p>
+            <p class="data" style="color: #3cff00;"><span id="data_sensex"></span></p>&emsp;
             <script type="text/javascript">
                 var numberText1 = document.createTextNode("");
                 document.getElementById("data_sensex").appendChild(numberText1);
@@ -19,9 +31,6 @@
                 randint();
                 setInterval(randint,1000*2);
             </script>
-            <p>Sensex</p>
-            <p style="color: rgb(0, 255, 0)">1623 +0.77</p>
-
             </div>
             <div id="header-logo">
                 <img src="Logo.jpg" alt="logo">
@@ -38,12 +47,12 @@
             </div>
             
         </header>
-        <div id="search-list">
+        <!--<div id="search-list">
             <form class="example">
                 <input type="text" placeholder="Search &nbsp eg: TCS, HDFC, SUN PHARMA" name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
               </form>
-        </div>
+        </div>-->
 
     </body>
 </html>
