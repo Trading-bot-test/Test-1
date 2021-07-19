@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    background-color: whitesmoke;
+    background-color: black;
 }
 
 header
@@ -54,6 +54,11 @@ header
 	float: right;
 	margin-top: 12px;
     padding: 0px 22px 0px 13px;
+}
+#header-right a
+{
+  color: azure;
+  text-decoration: none;
 }
 #main_table{
     margin-left: 450px;
