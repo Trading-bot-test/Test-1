@@ -55,3 +55,28 @@ header
 	margin-top: 12px;
     padding: 0px 22px 0px 13px;
 }
+#main_table{
+    margin-left: 450px;
+    font-size: x-large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    border-bottom: 2px solid black;
+}
+#th_name{
+    padding-right: 100px;
+    border-right: 2px solid black;
+}
+#th_qty{
+    padding-right: 50px;
+}
+#th_cst, #th_c_val{
+    padding-right: 30px;
+}
+#th_ltp{
+    padding-right: 30px;
+    border-right: 2px solid black;
+}
+#th_pl{
+    border-right: 2px solid black;
+
+}
