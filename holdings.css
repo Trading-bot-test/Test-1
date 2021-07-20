@@ -6,19 +6,18 @@ body
 
 header
 {
-	width: 100%;
+    width: 100%;
 	background-color: black;
-  color: aliceblue;
-	height: 70px;
-  box-shadow: 1px 1px white;
-  z-index: 100;
+    color: aliceblue;
+	height: 80px;
+    box-shadow: 1px 1px white;
+    z-index: 100;
 }
 
 #header-left
 {
     width: 45%;
     font-size: 16px;
-    
 }
 
 #header-left p
@@ -45,27 +44,24 @@ header
     width: 50%;
     font-size: 20px;
     float: left;
-    margin-right: 55px;
-
 }
 
-#header-right p
+#header-right ul li
 {
 	float: right;
-	margin-top: 12px;
     padding: 0px 22px 0px 13px;
+    list-style: none;
 }
 
-#header-right p a
+#header-right ul li a
 {
   color: azure;
   text-decoration: none;
-  
 }
 
-#header-right a:hover
+#header-right ul li a:hover
 {
-	color: rgb(96, 241, 38);
+	color: #73fa24 ;
 }
 
 #main_table{
