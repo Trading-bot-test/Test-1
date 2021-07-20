@@ -1,5 +1,6 @@
 body
-{
+{   
+    width: 100%;
     margin: 0;
     background-color: black;
 }
@@ -64,13 +65,54 @@ header
 	color: #73fa24 ;
 }
 
+#body-options
+{
+    width: 20%;
+}
+
+#body-table
+{
+    width: 80%;
+}
+
+#options
+{
+  
+    color: salmon;
+    float: left;
+    list-style: none;
+    margin-top: 170px;
+    padding-right: 110px;
+}
+
+#options li 
+{
+    padding-bottom: 40px;
+}
+
 #main_table{
-    margin-left: 450px;
+
     color: azure;
     font-size: medium;
     font-family:'Segoe UI';
     border-collapse: collapse;
-    border-bottom: 2px solid yellowgreen;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
+#th_name, #th_qty, #th_cst, #th_ltp, #th_c_val, #th_pl 
+{
+    padding: 20px 40px 20px 40px;
+    text-align: center;
+}
+
+tr
+{
+    border: 2px rgb(22, 255, 236);
+    border-style:outset;
+    text-align: center;
+}
+
+tr:hover {
+    color:rgb(22, 181, 255);
+    
+}
