@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<style>
-body{
-  margin:0;
-  padding: 0;
-}
-.demo{
-  width: 100%;
-  height: 100vh;
-  background: url('https://i.postimg.cc/J07vSC9q/hero-background.jpg') no-repeat center;
-  background-size: cover;
-}
-</style>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="js/jquery.ripples.js"></script>
-<script>
-    $('.demo').ripples({
-
-// Image Url
-imageUrl: null,
-
-// The width and height of the WebGL texture to render to. 
-// The larger this value, the smoother the rendering and the slower the ripples will propagate.
-resolution: 256,
-
-// The size (in pixels) of the drop that results by clicking or moving the mouse over the canvas.
-dropRadius: 20,
-
-// Basically the amount of refraction caused by a ripple. 
-// 0 means there is no refraction.
-perturbance: 0.04,
-
-// Whether mouse clicks and mouse movement triggers the effect.
-interactive: true,
-
-// The crossOrigin attribute to use for the affected image. 
-crossOrigin: ''
-
-});
-</script>
-
+<link rel="stylesheet" href="test.css">
+<script defer src="test.js"></script>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+
 </head>
-<body>
-    <div class="demo"></div>
+<body id="particles-js">
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+    <form>
+      <input type="text" placeholder="First Name" required>
+      <input type="text" placeholder="Last Name" required></p>                 
+      <input type="text" placeholder="Phone Number" maxlength="10" required></p>                 
+      <input type="date" placeholder="DD/MM/YYYY" required></p>
+      <input type="email" placeholder="Email"></p>
+      <input type="password" placeholder="Password"></p>
+      <input type="password" placeholder="Confirm Password"></p>
+      <br>
+      <div class="button">
+        <button onclick="location.href = 'login.html'; myFunction()" class="submit"><strong><p style="color: black">Submit</p></strong></button>
+      </div>
+    </form>
+	</div>
+	<div class="form-container sign-in-container">
+    <form id="login-form" action="./Dashboard.html">
+      <input type="text" name="username" id="username-field" placeholder="Username or Email ID">
+      <br>
+      <input type="password" name="password" id="password-field" placeholder="Password">
+      <br>
+      <a id="fgt-pass" href="forgot_pass.html">Forgot Password?</a>
+      <br>
+      <input type="submit" value="Login" id="login-form-submit">
+      <br>
+      <br>
+    </form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>

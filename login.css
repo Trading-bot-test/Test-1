@@ -95,7 +95,7 @@
 }
 
 #social{
-  padding-left: 155px;
+  padding-left: 172px;
 }
 
 .login-head{
@@ -139,8 +139,7 @@
 
 #new-usr{
   display: grid;
-  align-self: flex-start;
   justify-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: 'Trebuchet MS';
 }
