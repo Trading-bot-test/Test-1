@@ -1,3 +1,6 @@
+html{
+    font-family: 'Optima',sans-serif;
+}
 body
 {   
     width: 100%;
@@ -7,19 +10,22 @@ body
 
 header
 {
-    width: 100%;
+	width: 100%;
 	background-color: black;
-    color: aliceblue;
-	height: 80px;
-    box-shadow: 1px 1px white;
-    z-index: 100;
+    margin:0;
+  color: aliceblue;
+	height: 85px;
+  box-shadow: 1px 1px white;
+  z-index: 100;
 }
 
 #header-left
 {
     width: 45%;
-    font-size: 16px;
+    font-size:large;
+    
 }
+
 
 #header-left p
 {
@@ -27,42 +33,50 @@ header
     float: left;
 }
 
+.data {
+    font-size: large;
+}
+
 #header-logo
 {
     width: 5%;
     float: left;
-    padding-right: 150px;
+    padding-right: 160px;
 }
 
 #header-logo img
 {
-    height: 40px;
+    height: 50px;
     margin: 0px 12px 0px 40px;
 }
 
 #header-right
 {
     width: 50%;
-    font-size: 20px;
+    font-size: x-large;
     float: left;
+    margin-right: 55px;
+
 }
 
-#header-right ul li
+#header-right p
 {
 	float: right;
+	margin-top: 12px;
     padding: 0px 22px 0px 13px;
-    list-style: none;
 }
 
-#header-right ul li a
+#header-right p a
 {
   color: azure;
   text-decoration: none;
+  
 }
 
-#header-right ul li a:hover
+#header-right a:hover
 {
-	color: #73fa24 ;
+	color: rgb(187, 241, 38);
+    transition: .4s;
 }
 
 #body-options
@@ -96,7 +110,7 @@ header
     font-size: medium;
     font-family:'Segoe UI';
     border-collapse: collapse;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 #th_name, #th_qty, #th_cst, #th_ltp, #th_c_val, #th_pl 
