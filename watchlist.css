@@ -105,10 +105,10 @@ header
 #left-widget{
     
     
-    position: absolute; 
+   position: absolute;
 }
 #right-widget{
-    
+
    float: right;
     
 }
