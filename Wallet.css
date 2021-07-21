@@ -77,8 +77,20 @@ margin: 0px 20px 0px 20px;
   color: azure;
   text-decoration: none;
 }
+<<<<<<< HEAD
 .row {
   margin: 0 -16px;
+=======
+
+#header-right a:hover
+{
+	color: rgb(187, 241, 38);
+    transition: .4s;
+}
+
+  .row {
+    margin: 0 -16px;
+>>>>>>> f2b706890698b27b1f721f84c98434c9fda08b4d
   } 
 .tag {
   padding: 0 16px;
