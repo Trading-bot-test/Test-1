@@ -13,7 +13,7 @@ header
 	background-color: black;
     margin:0;
   color: aliceblue;
-	height: 80px;
+	height: 85px;
   box-shadow: 1px 1px white;
   z-index: 100;
 }
@@ -21,9 +21,10 @@ header
 #header-left
 {
     width: 45%;
-    font-size: 16px;
+    font-size:large;
     
 }
+
 
 #header-left p
 {
@@ -31,23 +32,27 @@ header
     float: left;
 }
 
+.data {
+    font-size: large;
+}
+
 #header-logo
 {
     width: 5%;
     float: left;
-    padding-right: 150px;
+    padding-right: 160px;
 }
 
 #header-logo img
 {
-    height: 40px;
+    height: 50px;
     margin: 0px 12px 0px 40px;
 }
 
 #header-right
 {
     width: 50%;
-    font-size: 20px;
+    font-size: x-large;
     float: left;
     margin-right: 55px;
 
