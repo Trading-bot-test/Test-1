@@ -95,6 +95,7 @@ function Buy3(){
     c_val.innerHTML = "3600";
     pl.innerHTML = "4000";
 }
+
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
