@@ -108,7 +108,7 @@
         <div class="left-side">
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
-    <div class="tradingview-widget-container__widget"></div>
+    
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
     {
     "colorTheme": "dark",
@@ -118,8 +118,8 @@
     "largeChartUrl": "https://in.tradingview.com/chart/",
     "isTransparent": false,
     "showSymbolLogo": true,
-    "width": "450",
-    "height": "592",
+    "width": "532",
+    "height": "720",
     "plotLineColorGrowing": "rgba(0, 255, 0, 1)",
     "plotLineColorFalling": "rgba(255, 0, 0, 1)",
     "gridLineColor": "rgba(240, 243, 250, 0)",
@@ -239,7 +239,140 @@
   <!-- TradingView Widget END -->
 </div>
         
+
+
+
+
+<!-- right-side -->
+
+
+
+
+
+
+
         <div class="right-side">
+
+<div id="split">
+    <!-- TradingView stock Graph Widget BEGIN -->
+    <div class="tradingview-widget-container" id="left-widget" >
+      <div id="tradingview_1d618"></div>
+      
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.MediumWidget(
+      {
+      "symbols": [
+        [
+          "Apple",
+          "AAPL"
+        ],
+        [
+          "Google",
+          "GOOGL"
+        ],
+        [
+          "Microsoft",
+          "MSFT"
+        ],
+        [
+          "Amazon",
+          "NASDAQ:AMZN|12M"
+        ],
+        [
+          "Facebook",
+          "NASDAQ:FB|12M"
+        ],
+        [
+          "Twitter",
+          "NYSE:TWTR|12M"
+        ],
+        [
+          "Unilever",
+          "NYSE:UL|12M"
+        ],
+        [
+          "Disney",
+          "NYSE:DIS|12M"
+        ],
+        [
+          "Netflix",
+          "NASDAQ:NFLX|12M"
+        ],
+        [
+          "American express",
+          "NYSE:AXP|12M"
+        ],
+        [
+          "SBI",
+          "BSE:SBIN|12M"
+        ]
+      ],
+      "chartOnly": false,
+      "width": "600",
+      "height": "400",
+      "locale": "in",
+      "colorTheme": "dark",
+      "gridLineColor": "rgba(42, 46, 57, 0)",
+      "trendLineColor": "rgba(73, 133, 231, 1)",
+      "fontColor": "#787b86",
+      "underLineColor": "rgba(41, 98, 255, 0.3)",
+      "underLineBottomColor": "rgba(41, 98, 255, 0)",
+      "isTransparent": false,
+      "autosize": false,
+      "container_id": "tradingview_1d618"
+    }
+      );
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  
+    <!-- TradingView Analysis Widget BEGIN -->
+    <div class="tradingview-widget-container" id="right-widget">
+      
+      
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+      {
+      "interval": "1m",
+      "width": 387,
+      "isTransparent": false,
+      "height": 400,
+      "symbol": "NASDAQ:AAPL",
+      "showIntervalTabs": true,
+      "locale": "in",
+      "colorTheme": "dark"
+    }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+</div>
+
+
+
+
+  
+  <!-- TradingView currency Widget BEGIN -->
+  <div class="tradingview-widget-container" >
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+    {
+    "width": 987,
+    "height": 320,
+    "currencies": [
+      "EUR",
+      "USD",
+      "JPY",
+      "GBP",
+      "AUD",
+      "INR"
+    ],
+    "isTransparent": false,
+    "colorTheme": "dark",
+    "locale": "in"
+  }
+    </script>
+  </div>
+
+<!-- TradingView Widget END -->
         </div>
     </div>
 

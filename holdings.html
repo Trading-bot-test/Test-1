@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="holdings.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script defer src="holdings.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     </head>
     <body>
         <header>
@@ -104,9 +105,9 @@
     </script>
         <div id="body-options">
         <ul id="options">
-            <li>Stocks</li>
-            <li>Mutual Funds</li>
-            <li>Cryptocurrecy</li>
+            <li id="stocks">Stocks</li>
+            <li id="mutual-funds">Mutual Funds</li>
+            <li id="cryptocurrecy">Cryptocurrecy</li>
         </ul>
         </div>
         
@@ -121,8 +122,10 @@
                 <th id="th_pl">P&L</th>
             </tr>
         </table>
+        <div id="piechart" style="height: 150px; width: 150px; padding-left: 1120px; z-index: -100;">
+        </div>
         </div>
 
-        <button type="button" onclick="Buy()">Try it</button>
+        <button type="button" id="butt" onclick="butt()">Try it</button>
     </body>
 </html>
