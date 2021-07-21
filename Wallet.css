@@ -85,6 +85,11 @@ header
   color: azure;
   text-decoration: none;
 }
+#header-right a:hover
+{
+	color: rgb(187, 241, 38);
+    transition: .4s;
+}
   .row {
     margin: 0 -16px;
   } 
