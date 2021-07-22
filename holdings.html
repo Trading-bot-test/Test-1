@@ -36,9 +36,9 @@
             </div>
             <div id="header-right">
                 <p><a href="#">Profile &nbsp;</a></p>
-                <p><a class="active" href="holdings.html">Holdings &nbsp;</a></p>
+                <p><a href="holdings.html">Holdings &nbsp;</a></p>
                 <p><a href="watchlist.html">Wachlist &nbsp;</a></p>
-                <p><a href="#">Wallet &nbsp;</a></p>
+                <p><a href="Wallet.html">Wallet &nbsp;</a></p>
                 <p><a href="Dashboard.html">Dashboard &nbsp;</a></p>  
                 </ul>
             </div>
@@ -104,28 +104,75 @@
   }
     </script>
         <div id="body-options">
-        <ul id="options">
-            <li id="stocks">Stocks</li>
-            <li id="mutual-funds">Mutual Funds</li>
-            <li id="cryptocurrecy">Cryptocurrecy</li>
-        </ul>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <table id="main_table">
+            <tr>
+              <th id="th_name">Inventory</th>
+              <th id="th_qty">Quantity</th>
+              <th id="th_cst">Cost</th>
+              <th id="th_ltp">LTP</th>
+              <th id="th_pl">P&L</th>
+            </tr>
+            <tr>
+              <td>RIL</td>
+              <td>28</td>
+              <td>1500.5</td>
+              <td>2090.25</td>
+              <td style="color: rgb(23, 231, 23);">+590.25</td>  
+            </tr>
+            <tr>
+              <td>SBIN</td>
+              <td>69</td>
+              <td>400.0</td>
+              <td>420.0</td>
+              <td style="color: rgb(23, 231, 23);">+20.0</td>  
+            </tr>
+            <tr>
+              <td>TATA</td>
+              <td>80</td>
+              <td>350.6</td>
+              <td>301.85</td>
+              <td style="color: rgb(253, 63, 29);">-48.25</td>  
+            </tr>
+            <tr>
+              <td>HDFC</td>
+              <td>17</td>
+              <td>1604.7</td>
+              <td>1444.0</td>
+              <td style="color: rgb(253, 63, 29);">-160.7</td>  
+            </tr>
+            <tr>
+              <td>WIPRO</td>
+              <td>73</td>
+              <td>510.6</td>
+              <td>567.05</td>
+              <td style="color: rgb(23, 231, 23);">+57.55</td>  
+            </tr>
+          </table>
+          <div id="piechart" style="height: 100px; width: 100px; padding-left: 890px; z-index: -100; position:absolute; top:50px; left:80px; "></div>
         </div>
         
-        <div id="body-table">
-        <table id="main_table">
-            <tr>
-                <th id="th_name">Instrument</th>
-                <th id="th_qty">Quantity</th>
-                <th id="th_cst">Cost</th>
-                <th id="th_ltp">LTP</th>
-                <th id="th_c_val">Cur.val</th>
-                <th id="th_pl">P&L</th>
-            </tr>
-        </table>
-        <div id="piechart" style="height: 150px; width: 150px; padding-left: 1120px; z-index: -100;">
+        <button class="openbtn" onclick="openNav()">&#9776; Stocks</button>
+        <h2></h2>
+        <p></p>
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
         </div>
-        </div>
+        
+        <button class="openbtn" onclick="openNav()">&#9776; Mutual Funds</button>
+        <h2></h2>
+        <p></p>
 
-        <button type="button" id="butt" onclick="butt()">Try it</button>
+        
+        <button class="openbtn" onclick="openNav()">&#9776; Cryptocurrency</button>
+        <h2></h2>
+        <p></p>
+        </div>
+        
+        
+        </div>
+        </div>
     </body>
 </html>
