@@ -1,189 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css" type="text/css">
     <script src="https://kit.fontawesome.com/dc5784d9ea.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="Dashboard.css">
 </head>
-<body>
-    <script src="https://www.macroaxis.com/widgets/url.jsp?t=42"></script>
-    <div class="spl left">
-        <img src="Logo.jpg" alt="Logo" height="120" width="130" style="padding-left: 30px;">
-        <div class="border-right">
-        <div class="updates">
-            <p style="font-size:15px; color: rgba(255,255,255,.5); padding-bottom: 15px; font-weight:bold;">MARKET UPDATES</p>
-            <p class="sub-head">SENSEX</p>
-            <p class="data" style="color: #42e442;"><span id="data_sensex"></span><i class="fas fa-arrow-up"></i></p>&emsp;
+<div class="container">
+    <header>
+        <div id="header-left">
+            <p>Nifty</p>
+            <p class="data" style="color: red;"><span id="data_nifty"></span></p>&emsp;
             <script type="text/javascript">
-                var numberText1 = document.createTextNode("");
-                document.getElementById("data_sensex").appendChild(numberText1);
-                function randint() {
-                numberText1.nodeValue = Math.floor(Math.random()*20)+23456.34;
+                setInterval(myFunction, 1000);
+
+                function myFunction() {
+                    var x = Math.abs(Math.random() * 30 + 15713.85);
+                    document.getElementById("data_nifty").innerHTML = parseFloat(x).toFixed(2);
                 }
-                randint();
-                setInterval(randint,1000*2);
             </script>
-            <p class="data" style="color: #42e442;">+<span id="data_sensex_mini"></span></p>
+            <p>Sensex</p>
+            <p class="data" style="color: #3cff00;"><span id="data_sensex"></span></p>&emsp;
             <script type="text/javascript">
-                var numberText2 = document.createTextNode("");
-                document.getElementById("data_sensex_mini").appendChild(numberText2);
-                function randint() {
-                numberText2.nodeValue = Math.floor(Math.random()*20)+305.54;
+                setInterval(myFunction, 1000);
+
+                function myFunction() {
+                    var x = Math.abs(Math.random() * 30 + 23456.34);
+                    document.getElementById("data_sensex").innerHTML = parseFloat(x).toFixed(2);
                 }
-                randint();
-                setInterval(randint,1000*2);
             </script>
-            <p class="sub-head">NIFTY</p>
-            <p class="data" style="color: red;"><span id="data_nifty"></span><i class="fas fa-arrow-down"></i></p>&emsp;
-            <script type="text/javascript">
-                var numberText3 = document.createTextNode("");
-                document.getElementById("data_nifty").appendChild(numberText3);
-                function randint() {
-                numberText3.nodeValue = Math.floor(Math.random()*20)+15713.80;
-                }
-                randint();
-                setInterval(randint,1000*2);
-            </script>
-            <p class="data" style="color:red;">-<span id="data_nifty_mini"></span></p>
-            <script type="text/javascript">
-                var numberText4 = document.createTextNode("");
-                document.getElementById("data_nifty_mini").appendChild(numberText4);
-                function randint() {
-                numberText4.nodeValue = Math.floor(Math.random()*20)+165.85;
-                }
-                randint();
-                setInterval(randint,1000*2);
-            </script>
-            <div style="padding-left: 5px; padding-top: 15px;">
-            <p class="sub-head">MARKET'S MOOD</p><br>
-            <img src="bull_left.jpg" alt="bull" height="125" width="125">
-            </div>
         </div>
+        <div id="header-logo">
+            <img src="Logo.jpg" alt="logo">
+        </div>
+        <div id="header-right">
+            <p><a href="#">Profile &nbsp;</a></p>
+            <p><a href="holdings.html">Holdings &nbsp;</a></p>
+            <p><a href="watchlist.html">Watchlist &nbsp;</a></p>
+            <p><a href="Wallet.html">Wallet &nbsp;</a></p>
+            <p><a href="Dashboard.html">Dashboard &nbsp;</a></p>
+            </ul>
+        </div>
+
+    </header>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+            async>
+            {
+                "symbols": [{
+                        "description": "",
+                        "proName": "BSE:SENSEX"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NASDAQ:AMZN"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NASDAQ:FB"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NYSE:TWTR"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NASDAQ:MSFT"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NASDAQ:AAPL"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NYSE:UL"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NYSE:DIS"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NASDAQ:NFLX"
+                    },
+                    {
+                        "description": "",
+                        "proName": "NYSE:AXP"
+                    },
+                    {
+                        "description": "",
+                        "proName": "BSE:SBIN"
+                    }
+                ],
+                "showSymbolLogo": true,
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "in"
+            }
+        </script>
     </div>
-    </div>   
-    <ul class="nav">
-        <li style="padding-left: 35px;"><a href="Dashboard.html">Dashboard</a></li>
-        <li><a href="water.jpeg">Wallet</a></li>
-        <li><a href="water.jpeg">Watchlist</a></li>
-        <li><a href="water.jpeg">Holdings</a></li>
-        <li><a href="water.jpeg">Orders</a></li>
-        <li><a href="water.jpeg"><i class="fas fa-user"></i></a></li>
-    </ul>
-    <div class="spr right">
-      <br><br>
-      <p class="greeting">Hello <span style="color: #f2aa4cff">Random Name!</span> Hope You Have A <span style="color: #86c232">Great Trade!</span></p><br>
-      
-      <table border="0" cellspacing="5" cellpadding="5">
-          <td>
-            <p class="greeting" style="font-weight:bold; padding-left: 120px;">&numsp;Top 5 Gainers</p>
-            <table border="0" cellspacing="7" cellpadding="8 ">
-                <th class="table_head">Company</th>
-                <th class="table_head">Current Price</th>
-                <th class="table_head">Change</th>
-                <tr>
-                    <td class="table_data">Indiabulls Ventures</td>
-                        <td class="table_data" style="text-align:center">192.70</td>
-                        <td class="change_stock_profit">+9.15</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data">Relience Infra</td>
-                        <td class="table_data" style="text-align:center">82.05</td>
-                        <td class="change_stock_profit">+3.90</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data">Relience power</td>
-                        <td class="table_data" style="text-align:center">13.48</td>
-                        <td class="change_stock_profit">+0.64</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data">Adani Transmission</td>
-                        <td class="table_data" style="text-align:center">982.00</td>
-                        <td class="change_stock_profit">+46.15</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data">PNB Housing Finance</td>
-                        <td class="table_data" style="text-align:center">715.00</td>
-                        <td class="change_stock_profit">+28.75</td>
-                    </tr>
-          </table>
-          </td>
-          <td style="padding-left: 15px;">
-            <p class="greeting" style="font-weight:bold; padding-left: 120px;">Top 5 Losers</p>
-            <table border="0" cellspacing="7" cellpadding="8 ">
-                <th class="table_head">Company</th>
-                <th class="table_head">Current Price</th>
-                <th class="table_head">Change</th>
-                <tr>
-                    <td class="table_data">HPCL</td>
-                        <td class="table_data" style="text-align:center">287.65</td>
-                        <td class="change_stock_loss">-18.70</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data">Bajaj Auto</td>
-                        <td class="table_data" style="text-align:center">4090.00</td>
-                        <td class="change_stock_loss">-98.25</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data">SAIL</td>
-                        <td class="table_data" style="text-align:center">125.60</td>
-                        <td class="change_stock_loss">-2.50</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data">Tata Motors</td>
-                        <td class="table_data" style="text-align:center">311.00</td>
-                        <td class="change_stock_loss">-6.10</td>
-                    </tr>
-                    <tr>
-                        <td class="table_data">Edelweiss Financial</td>
-                        <td class="table_data" style="text-align:center">79.85</td>
-                        <td class="change_stock_loss">-1.55</td>
-                    </tr>
-          </table>
-          </td>
-      </table>
-      <table border="0" cellspacing="5" cellpadding="5">
-          <td>
-              <img src="Sensex.jpg" alt="Sensex_Graph" height="280" width="425">
-          </td>
-          <td style="padding-left: 30px;">
-            <img src="Nifty.jpg" alt="Nifty_Graph" height="280" width="425">
-          </td>
-      </table>
-      <p class="greeting">News Articles!</p>
-      <table border="0" cellspacing="5" cellpadding="5">
-          <tr>
-              <td>
-                  <img src="Pizza.png" alt="Pizza" height="125" width="125">
-              </td>
-              <td class="article_link">
-                  <a href="https://economictimes.indiatimes.com/markets/ipos/fpos/zomato-ipo-when-will-it-open-ipo-price-retail-quota-how-many-shares-can-you-bid-for-allotment-status/articleshow/84226136.cms?from=mdr" class="article_link">Zomato IPO: When will it open, IPO price, retail quota, how many shares can you bid for, allotment status</a>
-              </td>
-          </tr>
-          <tr>
-            <td>
-                <img src="Stock.png" alt="Stock" height="125" width="125">
-            </td>
-            <td class="article_link">
-                <a href="https://economictimes.indiatimes.com/markets/stocks/news/30-of-nifty-200-stocks-still-trading-at-a-discount-can-offer-up-to-30-returns/articleshow/84222751.cms?from=mdr" class="article_link">30 of Nifty 200 stocks still trading at a discount, can offer up to 30% returns</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="Firework.jpg" alt="Firework" height="125" width="125">
-            </td>
-            <td class="article_link">
-                <a href="https://www.cnbctv18.com/market/market-outlook-indian-stock-market-to-see-fireworks-on-us-i-day-9876281.htm" class="article_link">Market Outlook: Indian stock market to see fireworks on US I-Day</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="JSW.png" alt="JSW" height="125" width="125">
-            </td>
-            <td class="article_link">
-                <a href="https://www.livemint.com/market/stock-market-news/why-jsw-energy-share-price-is-skyrocketing-explained-11625646754219.html" class="article_link">Why JSW Energy share price is skyrocketing — Explained</a>
-            </td>
-        </tr>
-      </table>
-      </div>
+    <!-- TradingView Widget END -->
+</div>
+<body>
+    <div>
+        <p class="greeting">Hello <span style="color: #f2aa4cff">Random Name!</span> Hope You Have A <span
+                style="color: #86c232">Great Trade!</span></p>
+    </div>
+
+
+
+        <!-- TradingView Widget BEGIN -->
+
+
+<div class="tradingview-widget-container" id="left-widget">
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.MediumWidget(
+    {
+    "symbols": [
+      [
+        "BSE:SENSEX|12M"
+      ]
+    ],
+    "chartOnly": false,
+    "width": 850,
+    "height": 600,
+    "locale": "in",
+    "colorTheme": "dark",
+    "gridLineColor": "rgba(42, 46, 57, 0)",
+    "trendLineColor": "#2962ff",
+    "fontColor": "#787b86",
+    "underLineColor": "rgba(41, 98, 255, 0.3)",
+    "underLineBottomColor": "rgba(41, 98, 255, 0)",
+    "isTransparent": false,
+    "autosize": false,
+    "container_id": "tradingview_5ddec"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container"id="right-widget" >
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
+    {
+    "colorTheme": "dark",
+    "dateRange": "12M",
+    "exchange": "BSE",
+    "showChart": true,
+    "locale": "en",
+    "largeChartUrl": "",
+    "isTransparent": false,
+    "showSymbolLogo": false,
+    "width": "450",
+    "height": "600",
+    "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
+    "plotLineColorFalling": "rgba(41, 98, 255, 1)",
+    "gridLineColor": "rgba(240, 243, 250, 0)",
+    "scaleFontColor": "rgba(120, 123, 134, 1)",
+    "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
+    "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
+    "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
+    "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
+  }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+<div id="news-widget">
+    <div align="center">
+        <p class="greeting" style="padding-top: 75px; margin-bottom: 0;" >News Articles</p>
+    </div>
+
+<!-- 24-7 Press Release Newswire Landing Page Widget Code Starts Here --> <script type="text/javascript" src="https://news.24-7pressrelease.com/247pr-news-widget.js?&amp;categories=106,107,333,334,335,336,489,337,108,300,338,109,110,139,339,171,111,112,340,341,113,342,343,114,344,115,345,319,116,347,348,&amp;showRelease=1&amp;width=auto&amp;headlinebold=0&amp;headlinesonly=0&amp;headlinecolor=2d57a1&amp;briefcolor=666666&amp;textcolor=333333&amp;typeface=arial&amp;fontsize=12&amp;width=auto&amp;headlinesepstyle=solid&amp;showimages=1&amp;numstories=10&amp;bgcolor=212121&amp;urldest=247pr"></script> <!-- 24-7 Press Release Newswire Landing Page Widget Code Ends Here -->
+</div>
+
+
+
 </body>
+
 </html>
