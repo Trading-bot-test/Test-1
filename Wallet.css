@@ -77,21 +77,6 @@ margin: 0px 20px 0px 20px;
   color: azure;
   text-decoration: none;
 }
-<<<<<<< HEAD
-.row {
-  margin: 0 -16px;
-=======
-
-#header-right a:hover
-{
-	color: rgb(187, 241, 38);
-    transition: .4s;
-}
-
-  .row {
-    margin: 0 -16px;
->>>>>>> f2b706890698b27b1f721f84c98434c9fda08b4d
-  } 
 .tag {
   padding: 0 16px;
   }
@@ -110,7 +95,6 @@ margin: 0px 20px 0px 20px;
   border: 1px solid #ccc;
   border-radius: 3px;
   }
-  
   label {
     font-family: 'Optima', sans-serif;
     margin-bottom: 10px;
@@ -134,7 +118,6 @@ margin: 0px 20px 0px 20px;
     cursor: pointer;
     font-size: 17px;
   }
-  
   .btn:hover {
     background-color: #45a049;
   }
