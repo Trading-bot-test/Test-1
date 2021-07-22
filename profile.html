@@ -16,39 +16,39 @@
 <body>
    <header>
       <div id="header-left">
-      <p >Nifty</p>
-      <p class="data" style="color: red; "><span id="data_nifty"></span></p>&emsp;
-      <script type="text/javascript">
-        setInterval(myFunction, 1000);
-        function myFunction(){
-        var x = Math.abs(Math.random() * 20 + 15713.85);
-        document.getElementById("data_nifty").innerHTML = parseFloat(x).toFixed(2); 
-        }
-  </script>
-      
-      <p >Sensex</p>
-      <p class="data" style="color: #3cff00; "><span id="data_sensex"></span></p>&emsp;
-      <script type="text/javascript">
-        setInterval(myFunction, 1000);
-        function myFunction(){
-        var x = Math.abs(Math.random() * 20 + 23456.34);
-        document.getElementById("data_sensex").innerHTML = parseFloat(x).toFixed(2); 
-        }
-  </script>
-   </div>
+          <p>Nifty</p>
+          <p class="data" style="color: red;"><span id="data_nifty"></span></p>&emsp;
+          <script type="text/javascript">
+              setInterval(myFunction, 1000);
 
+              function myFunction() {
+                  var x = Math.abs(Math.random() * 30 + 15713.85);
+                  document.getElementById("data_nifty").innerHTML = parseFloat(x).toFixed(2);
+              }
+          </script>
+          <p>Sensex</p>
+          <p class="data" style="color: #3cff00;"><span id="data_sensex"></span></p>&emsp;
+          <script type="text/javascript">
+              setInterval(myFunction, 1000);
+
+              function myFunction() {
+                  var x = Math.abs(Math.random() * 30 + 23456.34);
+                  document.getElementById("data_sensex").innerHTML = parseFloat(x).toFixed(2);
+              }
+          </script>
+      </div>
       <div id="header-logo">
           <img src="Logo.jpg" alt="logo">
       </div>
       <div id="header-right">
-          <p><a href="#">Profile &nbsp;</a></p>
+          <p><a href="profile.html">Profile &nbsp;</a></p>
           <p><a href="holdings.html">Holdings &nbsp;</a></p>
-          <p><a href="watchlist.html">Wachlist &nbsp;</a></p>
+          <p><a href="watchlist.html">Watchlist &nbsp;</a></p>
           <p><a href="Wallet.html">Wallet &nbsp;</a></p>
-          <p><a href="Dashboard.html">Dashboard &nbsp;</a></p>  
+          <p><a href="Dashboard.html">Dashboard &nbsp;</a></p>
           </ul>
       </div>
-      
+
   </header>
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
@@ -142,14 +142,14 @@
                               <img src="user.jpeg">
                             </span>
                               <p class="notification-user">
-                              <strong>netflix</strong> |
+                              <strong>SBI</strong> |
                               <span class="timestamp">15 mins ago</span>
                               </p>
                               <p class="notification-type">
-                                 bla bla
+                                 Your Order Has Been Placed
                               </p>
                               <p class="notification-project">
-                                 share <span class="project-name">market</span>
+                                  <span class="project-name">Orders</span>
                               </p>
                         </a>
                      </li>
@@ -159,14 +159,14 @@
                               <img src="user.jpeg"/>
                             </span>
                               <p class="notification-user">
-                              <strong>facebook</strong> |
+                              <strong>BAJAJ_FINANCE</strong> |
                               <span class="timestamp">25 mins ago</span>
                               </p>
                               <p class="notification-type">
-                                 bla bla
+                                 Your Account has been credited with Rs 15000
                               </p>
                               <p class="notification-project">
-                                 share <span class="project-name">market</span>
+                                 <span class="project-name">Cash_Flow</span>
                               </p>
                         </a>
                      </li>
@@ -176,14 +176,14 @@
                               <img src="user.jpeg"/>
                             </span>
                               <p class="notification-user">
-                              <strong>instagram</strong> |
+                              <strong>TradingBot</strong> |
                               <span class="timestamp">35 mins ago</span>
                               </p>
                               <p class="notification-type">
-                                bla bla
+                                 Congrats! For your First Trade!
                               </p>
                               <p class="notification-project">
-                                 share <span class="project-name">market</span>
+                                 <span class="project-name">TradingBot-Team</span>
                               </p>
                         </a>
                      </li>
@@ -196,8 +196,8 @@
 </li>
          <!-- end -->
          <!-- Filter -->      
-         <a class="button" href="">
-              <div class="logout">  <b> LOGOUT</b> </div>
+         <a class="button" href="login.html">
+              <div class="logout" >  <b> LOGOUT</b> </div>
             </a>
 
          <!-- end Filter -->      
@@ -209,7 +209,7 @@
                <div class="panel-heading single-project-nav">
                   <ul class="nav nav-tabs"> 
                    <li class="active">
-                      <a href="#user-profile-info" data-toggle="tab">Account Details</a>
+                      <a href="#user-profile-info" data-toggle="tab" style="color: whitesmoke;">Account Details</a>
                    </li>
                     </ul>
 
@@ -237,11 +237,11 @@
                         </div> -->
                         <div class="col-sm-4">
                            <label>Email</label>
-                           <input type="text" class="input-md form-control">
+                           <input type="email" class="input-md form-control">
                         </div>
                         <div class="col-sm-4">
                            <label>Password</label>
-                           <input type="text" class="input-md form-control">
+                           <input type="password" class="input-md form-control">
                         </div>
                      <div class="col-sm-4">
                            <label>Address</label>
@@ -255,10 +255,6 @@
                            <label>Contact Number</label>
                            <input type="text" class="input-md form-control">
                         </div>
-                     <div class="col-sm-4">
-                        <label>Demat Number</label>
-                        <input type="text" class="input-md form-control">
-                     </div>
                      </div>
                  <div class="saveclick">
                  <a class="btn flat btn-create">Save</a>

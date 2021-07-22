@@ -1,69 +1,97 @@
 body {
     margin: 0;
     background-color: #212121;
+    font-family: sans-serif;
   }
   
-  header {
-    width: 100%;
-    background-color: black;
-    color: aliceblue;
-    height: 70px;
-    box-shadow: 1px 1px white;
-    z-index: 100;
-  }
-  
-  #header-left {
+  header
+{
+	width: 100%;
+	background-color: black;
+    margin:0;
+  color: aliceblue;
+	height: 90px;
+  box-shadow: 1px 1px white;
+  z-index: 100;
+}
+
+#header-left
+{
     width: 45%;
-    font-size: 16px;
-  }
-  
-  #header-left p {
-    padding: 12px 12px 0px 17px;
+    font-size:large;
+    
+}
+
+
+#header-left p
+{
+    padding: 30px 12px 0px 17px;
     float: left;
-  }
-  
-  #header-logo {
+}
+
+.data {
+    font-size: large;
+}
+
+#header-logo
+{
     width: 5%;
     float: left;
-    padding-right: 150px;
-  }
-  
-  #header-logo img {
-    height: 40px;
-    margin: 0px 12px 0px 40px;
-  }
-  
-  #header-right {
-    width: 50%;
-    font-size: 20px;
-    float: left;
-    margin-right: 55px;
-  }
-  
-  #header-right p {
-    float: right;
-    margin-top: 12px;
-    padding: 0px 22px 0px 13px;
-  }
-  
-  #header-right p a {
-    color: azure;
-    text-decoration: none;
-  }
-  
-  #header-right a:hover {
-    color: rgb(96, 241, 38);
-  }
-  
+    padding-right: 160px;
+}
 
+#header-logo img
+{
+    height: 65px;
+    margin: 0px 12px 0px 40px;
+    padding-bottom: 15px;
+    
+}
+
+#header-right
+{
+    width: 50%;
+    font-size: x-large;
+    float: left;
+    margin-left: 20px;
+
+}
+
+#header-right p
+{
+	float: right;
+	margin-top: 5px;
+  padding: 0px 22px 12px 13px;
+  
+}
+
+#header-right p a
+{
+  color: azure;
+  text-decoration: none;
+  
+}
+
+#header-right a:hover
+{
+	color: rgb(187, 241, 38);
+    transition: .4s;
+}
   /* profile start */
   
   
-   .panel-default > .panel-heading {
-    background-color: #73c92d;
+  .panel-heading, .panel-body {
+    border-radius: 0px;
+    background-color: #F0F4F8;
+    
+    
+    
+    }
+    .panel-default >.panel-heading {
+    background-color:#243B53 ;
     text-transform: uppercase;
     font-weight: 500;
-  }
+    }
   
   .nav-tabs {
     border-bottom: none;
@@ -137,10 +165,9 @@ body {
     position: relative;
     overflow: hidden;
     letter-spacing: 3px;
-    opacity: 0;
-    transition: opacity 0.45s;
-    -webkit-transition: opacity 0.35s;
+
     color: black;
+    
   }
   .button {
     text-decoration: none;
@@ -154,19 +181,12 @@ body {
     background-color: #73c92d;
     transition: width 0.35s;
     overflow: hidden;
-  }
-  a:hover {
     width: 100px;
   }
+
+
   
-  a:hover .logout {
-    opacity: 5;
-  }
-  
-  a {
-    text-decoration: none;
-    font-weight: bold;
-  }
+
   /* logout end */
   .btn.Next {
     width: 130px;
@@ -294,10 +314,7 @@ body {
     padding: 10px;
   }
   
-  * {
-    box-sizing: border-box;
-  }
-  
+
   /* Set a style for all buttons */
   button {
     background-color: #04aa6d;
