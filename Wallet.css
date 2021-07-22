@@ -10,21 +10,21 @@ body,html {
 }
 .leftpane {
   width: 35%;
-  height: 175%;
+  height: 170%;
   float: left;
   background-color: #C5C6D0;    
 }
 .middlepane {
   margin:0;
   width: 35%;
-  height: 175%;
+  height: 170%;
   float: left;
   background-color: #3A3B3C; 
 }
 .rightpane {
   color: black;
   width: 30%;
-  height: 175%;
+  height: 170%;
   float: left;
   background-color: #C5C6D0;   
 }
