@@ -175,13 +175,13 @@
         </div>
         </div>
         <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container" style="margin-left: 550px; margin-top: 105px; z-index: -200; overflow: hidden;">
+      <div class="tradingview-widget-container" style="margin-left: 250px; margin-top: 105px; z-index: -200; overflow: hidden; position: absolute;">
         <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/symbols/INRUSD/technicals/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+        
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
         {
         "interval": "1W",
-        "width": 425,
+        "width": 430,
         "isTransparent": false,
         "height": 450,
         "symbol": "FX_IDC:INRUSD",
@@ -192,5 +192,22 @@
         </script>
       </div>
       <!-- TradingView Widget END -->
+      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="margin-left: 730px; margin-top: 105px; z-index: -200; overflow: hidden;">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+  {
+  "width": 700,
+  "height": 450,
+  "defaultColumn": "overview",
+  "screener_type": "crypto_mkt",
+  "displayCurrency": "BTC",
+  "colorTheme": "dark",
+  "locale": "in"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
     </body>
 </html>
