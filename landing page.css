@@ -21,7 +21,7 @@ body {
   object-fit: fill;
   z-index: -1;
   opacity: 0;
-  transition: 0.5s linear;
+  transition: 1.5s linear;
   /* box-sizing: border-box; */
 }
 .sliding .text {
