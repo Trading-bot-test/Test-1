@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>WALLET</title>
   <link rel="stylesheet" href="Wallet.css" type="text/css">
@@ -13,7 +12,6 @@
       <p class="data" style="color: red;"><span id="data_nifty"></span></p>&emsp;
       <script type="text/javascript">
         setInterval(myFunction, 1000);
-
         function myFunction() {
           var x = Math.abs(Math.random() * 30 + 15713.85);
           document.getElementById("data_nifty").innerHTML = parseFloat(x).toFixed(2);
@@ -41,7 +39,6 @@
       <p><a href="Dashboard.html">Dashboard &nbsp;</a></p>
       </ul>
     </div>
-
   </header>
   <!-- TradingView Widget BEGIN -->
   <div class="tradingview-widget-container">
@@ -236,8 +233,6 @@
     <iframe width="420" height="315" src="https://www.youtube.com/embed/ef_9kFyhi0k" title="YouTube video player"
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe></div>
-
-
   </div>
   <div class="middlepane">
     <div class="equity-header">
@@ -341,25 +336,25 @@
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <label for="cname">Name on Card</label>
-            <input type="text" id="cname" name="cardname" placeholder="Name" class="input">
-            <label for="ccnum">Credit card number</label>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="1111" class="card-number" maxlength="4">
+            <label>Name on Card</label>
+            <input type="text" name="cardname" placeholder="Name" class="input">
+            <label>Credit card number</label>
+            <input type="text" name="cardnumber" placeholder="1111" class="card-number" maxlength="4">
             <span>-</span>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="2222" class="card-number" maxlength="4">
+            <input type="text" name="cardnumber" placeholder="2222" class="card-number" maxlength="4">
             <span>-</span>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="3333" class="card-number" maxlength="4">
+            <input type="text" name="cardnumber" placeholder="3333" class="card-number" maxlength="4">
             <span>-</span>
-            <input type="text" id="ccnum" name="cardnumber" placeholder="4444" class="card-number" maxlength="4">
-            <label for="expmonth">Exp Month</label>
-            <input type="text" id="expmonth" name="expmonth" placeholder="February" class="input">
+            <input type="text" name="cardnumber" placeholder="4444" class="card-number" maxlength="4">
+            <label>Exp Month</label>
+            <input type="text" name="expmonth" placeholder="February" class="input">
             <div class="tag" style="display:inline-block">
-              <label for="expyear">Exp Year</label>
+              <label>Exp Year</label>
               <input type="text" id="expyear" name="expyear" placeholder="2021" class="input">
             </div>
             <div class="tag" style="display: inline-block">
-              <label for="cvv">CVV</label>
-              <input type="password" id="cvv" name="cvv" placeholder="111" class="input">
+              <label>CVV</label>
+              <input type="password" name="cvv" placeholder="111" class="input">
             </div>
           </div>
         </div>
@@ -372,5 +367,4 @@
     </div>
   </div>
 </div>
-
 </html>
