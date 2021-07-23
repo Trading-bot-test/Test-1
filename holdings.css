@@ -119,7 +119,7 @@ header
 
 #th_name, #th_qty, #th_cst, #th_ltp, #th_c_val, #th_pl 
 {
-    padding: 20px 40px 20px 40px;
+    padding: 40px 40px 15px 40px;
     text-align: center;
     border-collapse: collapse;
     border-style: double;
@@ -130,6 +130,10 @@ tr
     border: 2px whitesmoke;
     text-align: center;
     
+    
+}
+td{
+    padding: 15px;
 }
 
 tr:hover {
@@ -142,22 +146,22 @@ tr:hover {
 
 
 
-/* The sidepanel menu */
+
 .sidepanel {
-    height: 450px; /* Specify a height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 450px; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
     top: 120;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 0px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    background-color: #111;
+    overflow-x: hidden; 
+    padding-top: 0px; 
+    transition: 0.5s; 
     margin-left: 200px;
   }
   
-  /* The sidepanel links */
+
   .sidepanel a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -166,13 +170,12 @@ tr:hover {
     display: block;
     transition: 0.3s;
   }
-  
-  /* When you mouse over the navigation links, change their color */
+
   .sidepanel a:hover {
     color: #f1f1f1;
   }
   
-  /* Position and style the close button (top right corner) */
+
   .sidepanel .closebtn {
     position: absolute;
     top: 0;
@@ -181,7 +184,7 @@ tr:hover {
     margin-left: 50px;
   }
   
-  /* Style the button that is used to open the sidepanel */
+  
   .openbtn {
     font-size: 20px;
     cursor: pointer;

@@ -1,8 +1,4 @@
-/* body {
-	background: linear-gradient(-45deg, #D8B5FF, #1EAE98);
-	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
-} */
+
 
 @keyframes gradient {
 	0% {
@@ -61,12 +57,7 @@
   justify-items: center;
   margin-top: 10px;
 }
-/* input{
-  border: none;
-  background-color: #696969;
-  border-radius: 4px;
-  width: 200px; 
-} */
+
 
 #username-field, #password-field{
   border: none;
@@ -108,7 +99,7 @@
 }
 
 #login-form-submit{
-    background-image: linear-gradient(to right, #00ff95 0%, #00ff37  51%, #91ff00  100%);
+    
     display: inline-block;
     overflow: hidden;
     background-color: 	#2E8B57;
